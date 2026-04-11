@@ -1,0 +1,141 @@
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: poppins, sans-serif;
+        color: #000;
+        background-color: #000;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(10, 10, 30, 0.9);
+        padding: 10px 30px;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #c361e6;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+    
+    .btn {
+        padding: 8px 30px;
+        font-size: 16px;
+        border: none;
+        border-radius: 6px;
+        transition: 0.5s;
+        color: #fff;
+        background-color: #c361e6;
+    }
+    
+    .btn:hover {
+        background-color: #a308db;
+        cursor: pointer;
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    
+    section {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: hsl(285, 100%, 36%);
+        text-align: center;
+    }
+    
+    .img-slider {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .ll {
+        background-color: #000;
+    }
+    
+    .image {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .lb {
+        background-color: #000;
+    }
+    
+    .explain {
+        text-align: center;
+    }
+    
+    .explain .hero-title {
+        color: #a308db;
+    }
+    
+    p {
+        text-align: center;
+        text-decoration: none;
+        text-decoration-color: #a308db;
+    }
+    
+    h2 {
+        color: #eecdff;
+        text-align: center;
+        transition: 0.3s;
+    }
+    
+    h2:hover {
+        color: #c361e6;
+    }
+    
+    h3 {
+        color: #eecdff;
+        text-align: center;
+        transition: 0.3s;
+    }
+    
+    h3:hover {
+        color: #c361e6;
+    }
+    
+    h1 {
+        color: #eecdff;
+        text-align: center;
+        transition: 0.3s;
+    }
+    
+    h1:hover {
+        color: #c361e6;
+    }
+    
+    .part {
+        color: red;
+    }
+    
+    footer {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 0rem;
+    }
+    
+    .text {
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        text-decoration-color: #a308db;
+    }
