@@ -289,3 +289,13 @@
         height: auto;
         object-fit: cover;
     }
+    
+    @media(max-width:762px) {
+        .container {
+            flex-direction: column;
+            gap: 20px;
+        }
+        .card-2 {
+            width: 90%;
+        }
+    }
