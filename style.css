@@ -139,3 +139,153 @@
         text-decoration: none;
         text-decoration-color: #a308db;
     }
+    
+    .container {
+        display: flex;
+        justify-content: start;
+        padding: 20px;
+    }
+    
+    .card-a {
+        text-align: center;
+        color: #fbf5fd;
+    }
+    
+    .card-a .h3 {
+        margin-top: 0;
+        color: #a308db;
+    }
+    
+    .card1 {
+        display: flex;
+        align-items: center;
+        border: 1px soild #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        gap: 15px;
+    }
+    
+    .ex {
+        width: 400px;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .card-b {
+        background: #fff;
+        border-radius: 22px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
+        padding: 25px;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+    
+    .card-b .h3 {
+        margin-top: 0;
+        color: #a308db;
+    }
+    
+    .card-2 {
+        display: flex;
+        border: 1px soild #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        gap: 15px;
+    }
+    
+    .ex-1 {
+        width: 400px;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .card-c {
+        background: #fff;
+        border-radius: 22px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
+        padding: 25px;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+    
+    .card-c .h3 {
+        margin-top: 0;
+        color: #a308db;
+    }
+    
+    .card-3 {
+        display: flex;
+        justify-content: center;
+        border: 1px soild #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        gap: 15px;
+    }
+    
+    .ex-2 {
+        width: 400px;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .card-d {
+        background: #fff;
+        border-radius: 22px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
+        padding: 25px;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+    
+    .card-d .h3 {
+        margin-top: 0;
+        color: #a308db;
+    }
+    
+    .card-4 {
+        display: flex;
+        align-items: center;
+        border: 1px soild #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        gap: 15px;
+    }
+    
+    .ex-3 {
+        width: 400px;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .card-e {
+        background: #fff;
+        border-radius: 22px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
+        padding: 25px;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+    
+    .card-e .h3 {
+        margin-top: 0;
+        color: #a308db;
+    }
+    
+    .card-5 {
+        display: flex;
+        align-items: center;
+        border: 1px soild #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        gap: 15px;
+    }
+    
+    .ex-4 {
+        width: 400px;
+        height: auto;
+        object-fit: cover;
+    }
