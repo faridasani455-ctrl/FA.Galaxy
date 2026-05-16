@@ -3,7 +3,7 @@
         scroll-behavior: smooth;
         overflow-x: hidden;
     }
-
+    
     body {
         margin: 0;
         padding: 0;
@@ -37,13 +37,13 @@
     nav {
         position: relative;
     }
-
+    
     nav ul {
         display: flex;
         list-style: none;
         gap: 20px;
     }
-
+    
     .nav-links {
         transition: opacity 0.3s ease, transform 0.3s ease;
     }
@@ -79,7 +79,7 @@
         font-weight: 500;
         transition: color 0.3s ease;
     }
-
+    
     nav a:hover {
         color: #c361e6;
     }
@@ -91,10 +91,11 @@
         overflow: hidden;
         transition: transform 0.5s ease;
     }
-
+    
     section {
         position: absolute;
-        top: 50%;
+        top: 40%;
+        display: flex;
         left: 50%;
         transform: translate(-50%, -50%);
         color: hsl(285, 100%, 36%);
@@ -109,7 +110,7 @@
         object-fit: cover;
         transition: transform 0.5s ease;
     }
-
+    
     .img-slider:hover {
         transform: scale(1.02);
     }
@@ -177,11 +178,9 @@
     }
     
     footer {
-        background-color: #000;
-        color: #fff;
-        text-align: center;
-        padding: 1rem;
-        margin-top: 0rem;
+        margin: 0;
+        background-color: #f4f6f8;
+        color: #333;
     }
     
     .text {
@@ -340,114 +339,226 @@
         height: auto;
         object-fit: cover;
     }
-    
-   
-
     /* Styles de base */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #333;
-  color: white;
-}
-
-.nav-links {
-  display: flex;
-  list-style: none;
-}
-
-.nav-links li {
-  margin-left: 20px;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Cacher le bouton burger par défaut */
-.burger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  background: none;
-  border: none;
-}
-
-.bar {
-  height: 3px;
-  width: 25px;
-  background-color: white;
-  margin: 3px 0;
-  transition: 0.3s;
-}
-
-@media screen and (max-width: 768px) {
-  /* Afficher le burger en mobile */
-  .burger {
-    display: flex;
-  }
-
-  /* La liste cachée */
-  .nav-links {
-    display: none; /* Toujours caché par défaut */
-    flex-direction: column;
     
-    /* Positionnement en haut à droite */
-    position: fixed;
-    top: 60px;
-    right: 0;
-    width: 250px;
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #333;
+        color: white;
+    }
     
-    /* Design professionnel */
-    background-color: rgba(10, 10, 30, 0.95);
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    box-shadow: -5px 5px 10px rgba(0,0,0,0.3);
-    z-index: 1000;
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-
-  .nav-links.active {
-    display: flex;
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  /* Style de chaque ligne de la liste */
-  .nav-links li {
-    width: 100%;
-    text-align: center;
-    border-bottom: 1px solid #444;
-  }
-
-  .nav-links li a {
-    display: block;
-    padding: 15px;
-    width: 100%;
-    color: white;
-    text-decoration: none;
-  }
-
-  .nav-links li button {
-    width: calc(100% - 30px);
-    margin: 10px 15px;
-  }
-
-  /* Animation du burger - transformation en X */
-  .burger.toggle .bar:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-
-  .burger.toggle .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .burger.toggle .bar:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
-}
+    .nav-links {
+        display: flex;
+        list-style: none;
+    }
+    
+    .nav-links li {
+        margin-left: 20px;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+    }
+    /* Cacher le bouton burger par défaut */
+    
+    .burger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        background: none;
+        border: none;
+    }
+    
+    .bar {
+        height: 3px;
+        width: 25px;
+        background-color: white;
+        margin: 3px 0;
+        transition: 0.3s;
+    }
+    
+    @media screen and (max-width: 768px) {
+        /* Afficher le burger en mobile */
+        .burger {
+            display: flex;
+        }
+        /* La liste cachée */
+        .nav-links {
+            display: none;
+            /* Toujours caché par défaut */
+            flex-direction: column;
+            /* Positionnement en haut à droite */
+            position: fixed;
+            top: 60px;
+            right: 0;
+            width: 250px;
+            /* Design professionnel */
+            background-color: rgba(10, 10, 30, 0.95);
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        .nav-links.active {
+            display: flex;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Style de chaque ligne de la liste */
+        .nav-links li {
+            width: 100%;
+            text-align: center;
+            border-bottom: 1px solid #444;
+        }
+        .nav-links li a {
+            display: block;
+            padding: 15px;
+            width: 100%;
+            color: white;
+            text-decoration: none;
+        }
+        .nav-links li button {
+            width: calc(100% - 30px);
+            margin: 10px 15px;
+        }
+        /* Animation du burger - transformation en X */
+        .burger.toggle .bar:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        .burger.toggle .bar:nth-child(2) {
+            opacity: 0;
+        }
+        .burger.toggle .bar:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+    }
+    
+    .site-footer {
+        background: #101320;
+        color: #d0d4da;
+        padding: 40px 24px;
+    }
+    
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(180px, 1fr));
+        gap: 24px;
+    }
+    
+    .footer-brand {
+        grid-column: span 2;
+    }
+    
+    .footer-brand h2 {
+        margin: 0 0 12px;
+        font-size: 1.75rem;
+        color: #ffffff;
+    }
+    
+    .footer-brand p {
+        line-height: 1.8;
+        color: #b8bcc4;
+        max-width: 520px;
+    }
+    
+    .footer-links h3,
+    .footer-contact h3,
+    .footer-social h3 {
+        margin-bottom: 14px;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08rem;
+        color: #9aa1b3;
+    }
+    
+    .footer-links ul,
+    .footer-contact ul,
+    .footer-social ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer-links li,
+    .footer-contact li,
+    .footer-social li {
+        margin-bottom: 12px;
+    }
+    
+    .footer-links a,
+    .footer-contact a,
+    .footer-social a {
+        color: #d0d4da;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+    
+    .footer-links a:hover,
+    .footer-contact {
+        color: #ffffff;
+    }
+    
+    .footer-contact li {
+        color: #b8bcc4;
+    }
+    
+    .footer-social a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: #d0d4da;
+        text-decoration: none;
+        transition: color 0.2s ease;
+    }
+    
+    .footer-social a:hover {
+        color: #ffffff;
+    }
+    
+    .footer-bottom {
+        margin-top: 32px;
+        border-top: 1px soild rgba(255, 255, 255, 0.08);
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px;
+        color: #8f95a5;
+        font-size: 0.95rem;
+    }
+    
+    .footer-bottom a {
+        color: #d0d4da;
+        text-decoration: none;
+    }
+    
+    .footer-bottom a:hover {
+        color: #ffffff;
+    }
+    
+    @media (max-width: 900px) {
+        .footer-container {
+            grid-template-columns: repeat(2, minmax(16px, 1fr));
+        }
+        .footer-brand {
+            grid-column: span 2;
+        }
+    }
+    
+    @media (max-width: 620px) {
+        .footer-container {
+            grid-template-columns: 1fr;
+        }
+        .footer-brand {
+            grid-column: span 1;
+        }
+    }
