@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapi.com">
+
+</head>
+
+<body>
+
+    <main class="quiz-container" id="quiz-container">
+        <article class="quiz-card" id="quiz-card" aria-label=" Space Quiz Cards">
+
+            <header class="card-header">
+                <div class="header-left"></div>
+                <h1 class="card-title" id="quiz-title">SPACE QUIZ</h1>
+                <div class="card-progress" id="quiz-progress" aria-live="polite">QUESTION 1 / 50</div>
+            </header>
+
+            <section class="question-section">
+                <p class="question-text" id="question-text">
+                    what is the hottes planet in the solar system?
+                </p>
+
+            </section>
+
+            <section class="options-section" aria-label=" Answer Options ">
+                <div class="option-list" id="option-list">
+                    <button class="option-btn" data index="1" id="opt-0">
+                        <span class="options-label">Mercury</span>
+                        <span class="option-icon"></span>
+
+                    </button>
+
+                    <button class="option-btn" data index="2" id="opt-1">
+                        <span class="options-label">Venus</span>
+                        <span class="option-icon"></span>
+
+                    </button>
+
+                    <button class="option-btn" data index="3" id="opt-2">
+                        <span class="options-label">Mars</span>
+                        <span class="option-icon"></span>
+
+                    </button>
+
+                    <button class="option-btn" data index="4" id="opt-3">
+                        <span class="options-label">Jupiter</span>
+                        <span class="option-icon"></span>
+
+                    </button>
+
+                </div>
+            </section>
+
+            <section class="explantion-section" id="explantion-container" aria-hidden="true" style="display: none;">
+                <p class="explanation-text" id="explantion-container">
+                    Correct; the dense atmosphere of venus traps the heat, macking it hotter than mercury.
+                </p>
+            </section>
+
+            <footer class="card footer">
+                <botton class="next-btn" id="next-btn" disabled></botton>
+                NEXT
+            </footer>
+
+        </article>
+    </main>
+
+    <script src="question.js"></script>
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
