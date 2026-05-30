@@ -1,28 +1,28 @@
 const quizQuestions = [
     // --- SCIENCES & NATURE (1-20) ---
     {
-        question: "Quelle est la planète la plus chaude du système solaire ?",
-        options: ["Mercure", "Vénus", "Mars", "Jupiter"],
-        correctIndex: 1,
-        explanation: "L'atmosphère dense de Vénus emprisonne la chaleur par effet de serre, la rendant plus chaude que Mercure bien qu'elle soit plus éloignée du Soleil."
+        question: "who craeted the term 'Dark Matter ?",
+        options: ["Saul Adelman", "Marc Aaronson", " Fritz Zwicky", "Vera Rubin"],
+        correctIndex: 3,
+        explanation: " Correct, Fritz Zwicky coined the term while studying the Coma galaxy cluster."
     },
     {
-        question: "Quelle force maintient les planètes en orbite autour du Soleil ?",
-        options: ["La force magnétique", "La force gravitationnelle", "La force centrifuge", "La friction atmosphérique"],
-        correctIndex: 1,
-        explanation: "C'est la force de gravité, modélisée par Newton puis Einstein, qui régit les mouvements des corps célestes à grande échelle."
+        question: "The universe is made-out of ,how many componets ?",
+        options: ["5", "2", "4", "3"],
+        correctIndex: 3,
+        explanation: "Correct, the universe is made-out of 3 componets: visibal matter, dark matter and dark energy."
     },
     {
-        question: "Quel gaz est le plus abondant dans l'atmosphère terrestre ?",
-        options: ["L'oxygène", "Le dioxyde de carbone", "L'azote", "L'hydrogène"],
+        question: "Dark Matter is made-up, to how  many precentage (%) in our universe?",
+        options: ["58%", "27%", "82%", "5%"],
         correctIndex: 2,
-        explanation: "L'atmosphère de la Terre est composée à environ 78% d'azote (diazote) et à seulement 21% d'oxygène."
+        explanation: "Correct, scientist have measured that dark matter makes up to 27% of the cosmos."
     },
     {
-        question: "Combien de temps la lumière du Soleil met-elle environ pour parvenir sur Terre ?",
-        options: ["8 secondes", "8 minutes", "8 heures", "8 jours"],
-        correctIndex: 1,
-        explanation: "La Terre étant située à environ 150 millions de kilomètres du Soleil, la lumière voyageant à 300 000 km/s met environ 8 minutes et 20 secondes à nous parvenir."
+        question: "The larges galaxy contains, how  many stars?",
+        options: ["Million", "Billion", "Hundred", "Trillion"],
+        correctIndex: 3,
+        explanation: "Correct, the largest contain trillions of stars and can be more than a million light-years across."
     },
     {
         question: "Quel est l'élément chimique le plus léger et le plus abondant de l'Univers ?",
