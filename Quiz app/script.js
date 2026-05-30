@@ -38,23 +38,31 @@ function initQuiz() {
         quizData.title = "CULTURE GÉNÉRALE";
     } else {
         // Robust fallback if questions.js is not loaded
-        quizData.questions = [{
-                question: "Quelle est la planète la plus chaude du système solaire ?",
-                options: ["Mercure", "Vénus", "Mars", "Jupiter"],
-                correctIndex: 1,
-                explanation: "L'atmosphère dense de Vénus emprisonne la chaleur par effet de serre, la rendant plus chaude que Mercure bien qu'elle soit plus éloignée du Soleil."
+        quizData.questions = [
+
+            {
+                question: "who craeted the term 'Dark Matter ?",
+                options: ["Saul Adelman", "Marc Aaronson", " Fritz Zwicky", "Vera Rubin"],
+                correctIndex: 2,
+                explanation: " Correct, Fritz Zwicky coined the term while studying the Coma galaxy cluster."
             },
             {
-                question: "Quelle planète est surnommée la Planète Rouge en raison de son sol d'oxyde de fer ?",
-                options: ["Terre", "Mars", "Jupiter", "Saturne"],
-                correctIndex: 1,
-                explanation: "La surface de Mars est recouverte d'une poussière d'oxyde de fer (rouille), ce qui lui donne cette teinte rougeâtre si caractéristique visible à l'œil nu."
+                question: "The universe is made-out of ,how many componets ?",
+                options: ["5", "2", "4", "3"],
+                correctIndex: 3,
+                explanation: "Correct, the universe is made-out of 3 componets: visibal matter, dark matter and dark energy."
             },
             {
-                question: "Quel est le plus grand satellite naturel de la planète Saturne ?",
-                options: ["La Lune", "Titan", "Europe", "Ganymède"],
+                question: "Dark Matter is made-up, to how  many precentage (%) in our universe?",
+                options: ["58%", "27%", "82%", "5%"],
                 correctIndex: 1,
-                explanation: "Titan est le plus grand satellite de Saturne. C'est le seul satellite du système solaire connu pour avoir une atmosphère dense et des lacs de méthane liquide."
+                explanation: "Correct, scientist have measured that dark matter makes up to 27% of the cosmos."
+            },
+            {
+                question: "The larges galaxy contains, how  many stars?",
+                options: ["Million", "Billion", "Hundred", "Trillion"],
+                correctIndex: 3,
+                explanation: "Correct, the largest contain trillions of stars and can be more than a million light-years across."
             }
         ];
         quizData.title = "SPACE QUIZ";
